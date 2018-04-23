@@ -1,0 +1,131 @@
+========== accordionCreate: ==========
+----------------
+// var tabs = [
+//     {clas: "one",title: "1", description: "111"},
+//     {clas: "two",title: "2", description: "222"},
+//     {clas: "three",title: "3", description: "333"}
+// ]
+// console.log(tabs.length);
+// for (var i = 0; i < tabs.length; i++){
+//     console.log(tabs[i]);
+// }
+----------------
+
+// for (var key in panels){
+//     accordionTab.className = panels[key].classNamee;
+//     accordionTab.id = panels[key].idName;
+//     accordionTitle.className = panels[key].titleClassName;
+//     titleIcon.className = panels[key].titleIconClassName;
+//     titleIcon.innerHTML = panels[key].titleIconText;
+//     accordionTitle.innerHTML = panels[key].titleText;
+//     accordionContent.className = panels[key].contentClassName;
+//     accordionContent.innerHTML = panels[key].contentText;
+//     console.log(titleIcon.innerHTML);
+// }
+
+// const container = document.createElement('div');
+// container.className = 'container';
+// document.getElementsByTagName('body')[0].appendChild(container);
+//
+// const mainAccordion = document.createElement('div');
+// mainAccordion.className = 'accordion';
+// container.appendChild(mainAccordion);
+
+// const accordionTab = document.createElement('div');
+// // accordionTab.className = 'accordion-tab';
+// accordionTab.id = 'tabFirst';
+// mainAccordion.appendChild(accordionTab);
+
+// const accordionTitle = document.createElement('div');
+// accordionTitle.className = 'accordion-tab__title deep-purple accent-4';
+// accordionTab.appendChild(accordionTitle);
+//
+// const titleIcon = document.createElement('i');
+// titleIcon.className = 'material-icons';
+// titleIcon.innerHTML = 'phone_iphone'
+// accordionTitle.innerHTML = 'iPhone';
+// accordionTitle.prepend(titleIcon);
+//
+// const accordionContent = document.createElement('div');
+// accordionContent.className = 'accordion-tab__content';
+// accordionContent.innerHTML = '* The iPhone Upgrade Program is available to qualified customers and requires service with AT&T, Sprint, T-Mobile, or Verizon.\n' +
+//     '                    A two-year installment loan and iPhone activation are required. Terms apply.\n' +
+//     '                    † Trade-in values may vary based on the condition and model of your smartphone trade-in.\n' +
+//     '                    Offer may not be available in all stores and not all devices are eligible for credit.\n' +
+//     '                    Additional terms apply. Learn more.\n' +
+//     '                    Some AR apps shown may not be available in all regions or all languages';
+// accordionTab.appendChild(accordionContent);
+
+
+/* second tab */
+// const accordionTab2 = document.createElement('div');
+// accordionTab2.className = 'accordion-tab';
+// accordionTab2.id = 'tabSecond';
+// mainAccordion.appendChild(accordionTab2);
+//
+// const accordionTitle2 = document.createElement('div');
+// accordionTitle2.className = 'accordion-tab__title deep-purple accent-4';
+// accordionTab2.appendChild(accordionTitle2);
+//
+// const titleIcon2 = document.createElement('i');
+// titleIcon2.className = 'material-icons';
+// titleIcon2.innerHTML = 'desktop_mac'
+// accordionTitle2.innerHTML = 'iMac';
+// accordionTitle2.prepend(titleIcon2);
+//
+// const accordionContent2 = document.createElement('div');
+// accordionContent2.className = 'accordion-tab__content';
+// accordionContent2.innerHTML = 'Power to the pro.\n' +
+//     '                    Pros love iMac. So we created one just for you. It’s packed with the most powerful graphics and processors ever in a Mac,\n' +
+//     '                    along with the most advanced storage, memory, and I/O — all behind a breathtaking Retina 5K display in a sleek,\n' +
+//     '                    all-in-one design. For everyone from photographers to video editors to 3D animators to musicians to software developers to scientists,\n' +
+//     '                    iMac Pro is ready to turn your biggest ideas into your greatest work.';
+// accordionTab2.appendChild(accordionContent2);
+//
+// /* third tab */
+// const accordionTab3 = document.createElement('div');
+// accordionTab3.className = 'accordion-tab';
+// accordionTab3.id = 'tabThird';
+// mainAccordion.appendChild(accordionTab3);
+//
+// const accordionTitle3 = document.createElement('div');
+// accordionTitle3.className = 'accordion-tab__title deep-purple accent-4';
+// accordionTab3.appendChild(accordionTitle3);
+//
+// const titleIcon3 = document.createElement('i');
+// titleIcon3.className = 'material-icons';
+// titleIcon3.innerHTML = 'crop_portrait'
+// accordionTitle3.innerHTML = 'iPad';
+// accordionTitle3.prepend(titleIcon3);
+//
+// const accordionContent3 = document.createElement('div');
+// accordionContent3.className = 'accordion-tab__content';
+// accordionContent3.innerHTML = '* $285 trade-in refers to an iPad in excellent condition. Trade-in values will vary based on the condition, year, and configuration of your trade-in device. Not all devices are eligible for credit; to see if your device is eligible and to get an estimate, please visit Apple’s trade-in partner. Trade-in value is based upon the received device matching the description you provided when your estimate was made. You must be at least 18 years old to be eligible to trade in for credit or to trade in for an Apple Store Gift Card. Online and in-store values may vary. Apple reserves the right to refuse or limit the quantity of any device for any reason. In Apple Stores: Offer only available on presentation of a valid, government-issued photo ID (local law may require saving this information). Value of your current device may be applied toward purchase of a new Apple device. Offer may not be available in all stores.\n' +
+//     '                    Battery life varies by use and configuration; see www.apple.com/batteries for more information.\n' +
+//     '                    Sold separately.';
+// accordionTab3.appendChild(accordionContent3);
+
+
+========== toggle ==========
+let tabsId = [
+    {showTab: '#tabFirst'},
+    {showTab: '#tabSecond'},
+    {showTab: '#tabThird'}
+]
+const sTab = document.querySelector('.accordion-tab');
+tabsId.forEach(function(item){
+    sTab.id = item.showTab;
+    sTab.onclick = toggle;
+
+
+});
+function toggle(){
+    // if(sTab.classList.contains('accordion-tab')){
+    //         sTab.classList.add('opened');
+    //
+    // } else {
+    //     sTab.classList.remove('opened')
+    // }
+    sTab.classList.toggle('opened');
+}
+toggle();

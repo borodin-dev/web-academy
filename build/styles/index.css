@@ -6529,41 +6529,44 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
-* {
-  box-sizing: border-box; }
-
-html {
-  font-size: 14px; }
-
-.container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.traffic-light {
-  position: absolute;
-  top: 30%;
-  -ms-transform: translateY(-30%);
-      transform: translateY(-30%);
-  border: 1px solid lightgrey;
-  padding: 1.07143rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-  .traffic-light__lamp {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    border: 1px solid lightgrey;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 0.5rem; }
+.accordion {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+  .accordion-tab {
+    border: 1px solid #f5f5f5;
+    position: relative; }
+    .accordion-tab__title {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      height: 55px;
+      width: 100%;
+      padding: 0 15px;
+      font-weight: 500;
+      color: #fafafa;
+      cursor: pointer; }
+      .accordion-tab__title i {
+        width: 2rem;
+        font-size: 1.6rem;
+        display: inline-block;
+        text-align: center;
+        margin-right: 0.5rem; }
+    .accordion-tab__content {
+      padding: 2rem;
+      text-align: justify;
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+      -ms-transform-origin: top;
+          transform-origin: top;
+      position: absolute; }
+    .accordion-tab.opened .accordion-tab__content {
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+      position: static; }
+    .accordion-tab.closed .accordion-tab__content {
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+      position: static; }
 
 h1 {
   background-image: url(../assets/images/about.png);
