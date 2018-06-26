@@ -1,0 +1,94 @@
+/*
+ * Breakfast Section
+ */
+
+.breakfast{
+  background-image: url(../../assets/img/bg-breakfast.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-menu{
+    text-align: center;
+    padding: 95px 0 80px;
+
+    &__list:not(:nth-child(1)){
+      margin-top: 60px;
+    }
+    &__title{
+      color: #ffffff;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 0.5;
+      margin-bottom: 15px;
+    }
+    &__title-sm{
+      color: #ffffff;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      line-height: 0.5;
+    }
+    &__subtitle{
+      color: #c8a593;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    &__subtitle-sm{
+      color: #c2beba;
+      font-family: ProximaNovaRegular, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1;
+      letter-spacing: 2px;
+      margin: 20px 0 30px;
+    }
+    &__price{
+      color: #dfc691;
+      font-family: Alegreya-Regular, Roboto, Arial, sans-serif;
+      font-size: 36px;
+      line-height: 0.833;
+    }
+  }
+
+  &-moto{
+    margin: 50px auto;
+    padding: 50px 40px;
+    background-image: url(../../assets/img/breakfast-menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+
+    &__title{
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 44px;
+      text-align: center;
+      color: #56534c;
+      margin-top: 180px;
+    }
+    &__dscrpt{
+      font-family: ProximaNovaRegular, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 600;
+      color: #56534c;
+      width: calc(100% - 125px);
+      margin: 50px auto;
+    }
+    &__btn{
+      cursor: pointer;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      color: rgb(164, 125, 94);
+      font-weight: bold;
+      line-height: 1.667;
+      font-size: 18px;
+      border-width: 1px;
+      border-color: rgb(158, 156, 147);
+      border-style: solid;
+      width: 200px;
+      height: 55px;
+      background-color: transparent;
+      margin: 35px 0 45px;
+    }
+  }
+}

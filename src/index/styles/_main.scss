@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@font-face {
+  font-family: 'Alegreya-Black';
+  src: url('../../assets/fonts/Alegreya/Alegreya-Black.ttf');
+}
+@font-face {
+  font-family: 'Alegreya-BlackItalic';
+  src: url('../../assets/fonts/Alegreya/Alegreya-BlackItalic.ttf');
+}
+@font-face {
+  font-family: 'Alegreya-Bold';
+  src: url('../../assets/fonts/Alegreya/Alegreya-Bold.ttf');
+}
+@font-face {
+  font-family: 'Alegreya-BoldItalic';
+  src: url('../../assets/fonts/Alegreya/Alegreya-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Alegreya-Italic';
+  src: url('../../assets/fonts/Alegreya/Alegreya-Italic.ttf');
+}
+@font-face {
+  font-family: 'Alegreya-Regular';
+  src: url('../../assets/fonts/Alegreya/Alegreya-Regular.ttf');
+}
+@font-face {
+  font-family: 'Scripalt';
+  src: url('../../assets/fonts/scriptina/SCRIPALT.ttf');
+}
+@font-face {
+  font-family: 'Scriptin';
+  src: url('../../assets/fonts/scriptina/SCRIPTIN.ttf');
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('../../assets/fonts/proxima-nova-regular.ttf');
+}
+
+
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size:16px;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+ul,
+ol{
+  padding: 0;
+  margin: 0;
+}

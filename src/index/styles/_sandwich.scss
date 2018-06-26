@@ -1,0 +1,245 @@
+/*
+ * Sandwich and footer Section
+ */
+
+.sandwich{
+  background-image: url(../../assets/img/bg-sandwich.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-head{
+    text-align: center;
+    position: relative;
+
+    &__title{
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      color: rgb(86, 83, 76);
+      font-weight: bold;
+      line-height: 0.625;
+      letter-spacing: 2px;
+      position: absolute;
+      top: 120px;
+      z-index: 9999999;
+      left: 50%;
+      transform: translate(-50%,-60px);
+    }
+    &__subtitle{
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #a47d5e;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: absolute;
+      top: 200px;
+      z-index: 9999999;
+      left: 50%;
+      transform: translate(-50%,-100px);
+    }
+    &__img{
+
+    }
+  }
+
+  &-content{
+
+    &__left{
+
+    }
+    &__first{
+      text-align: center;
+      margin-bottom: 60px;
+      
+      &-title{
+        color: #a47d5e;
+        font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      &-subtitle{
+        color: #56534c;
+        font-family: ProximaNovaRegular, Roboto, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 0.6px;
+      }
+    }
+    &__second{
+      text-align: center;
+      margin-bottom: 60px;
+
+      &-title{
+        color: #a47d5e;
+        font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      &-subtitle{
+        color: #56534c;
+        font-family: ProximaNovaRegular, Roboto, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 0.6px;
+      }
+    }
+    &__third{
+      text-align: center;
+      margin-bottom: 60px;
+
+      &-title{
+        color: #a47d5e;
+        font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      &-subtitle{
+        color: #56534c;
+        font-family: ProximaNovaRegular, Roboto, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 0.6px;
+      }
+    }
+    &__first img{
+      border-radius: 63px;
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+    }
+    &__second img{
+      border-radius: 63px;
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+    }
+    &__third img{
+      border-radius: 63px;
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+    }
+
+
+    &__right{
+      background-image: url(../../assets/img/sandwich-content-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      margin-top: 110px;
+
+      &-blocks{
+        position: absolute;
+        right: 0;
+        top: -20px;
+      }
+    }
+    &__btn{
+      border-width: 1px;
+      border-color: #dfc691;
+      border-style: dashed;
+      background-color: white;
+      width: 189px;
+      height: 58px;
+      padding: 17px 35px;
+      text-decoration: none;
+      color: #dfc691;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: calc(100% - 585px);
+      left: -28px;
+    }
+    &__info-15{
+      font-size: 18px;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      color: rgb(164, 125, 94);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.667;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.8;
+      width: 200px;
+      height: 200px;
+
+      &-price{
+        font-size: 60px;
+        color: #56534c;
+      }
+    }
+    &__info-35{
+      font-size: 18px;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      color: rgb(164, 125, 94);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.667;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.8;
+      width: 200px;
+      height: 200px;
+
+      &-price{
+        font-size: 60px;
+        color: #56534c;
+      }
+    }
+    &__info-50{
+      background-image: url(../../assets/img/cook-time-bg.png);
+      background-repeat: no-repeat;
+      font-size: 18px;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      color: rgb(164, 125, 94);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.667;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      width: 200px;
+      height: 200px;
+
+      &-price{
+        font-size: 92px;
+        margin-top: -30px;
+      }
+    }
+    &__info-min{
+      font-size: 14px;
+      font-family: Alegreya-Bold, Roboto, Arial, Helvetica, sans-serif;
+      color: #979285;
+      text-transform: lowercase;
+      margin-top: -30px;
+    }
+  }
+
+  .border-topbot{
+    border-top: 2px solid #c2beba;
+    border-bottom: 1px solid #c2beba;
+    text-align: center;
+    padding: 34px 0;
+    text-transform: uppercase;
+    font-family: Alegreya-Regular, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .tilda{
+    border-top: 2px solid #c2beba;
+    border-bottom: 1px solid #c2beba;
+    padding: 33px 0;
+  }
+  .bottom-logo{
+    padding: 17px 0;
+    text-align: center;
+  }
+  .bottom-logo a{
+    font-family: Scriptin, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    color: #56534c;
+    text-decoration: none;
+  }
+}

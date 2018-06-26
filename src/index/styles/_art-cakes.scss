@@ -1,0 +1,136 @@
+/*
+ * Art of Cakes Section
+ */
+.art-cakes{
+  background-image: url(../../assets/img/bg-art-cakes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0 115px;
+
+  .text-block{
+    text-align: center;
+
+    &__title{
+      font-family: Alegreya-Bold, Roboto, Arial, sans-serif;
+      font-size: 3rem;
+      color: rgb(86, 83, 76);
+
+    }
+    
+    &__subtitle{
+      font-family: Alegreya-Bold, Roboto, Arial, sans-serif;
+      font-size: 1.3125rem;
+      letter-spacing: 0.125rem;
+      color: #a47d5e;
+      text-transform: uppercase;
+    }
+
+    &__descrip{
+      font-family: "Times New Roman", Roboto, Arial, sans-serif;
+      font-size: 0.875rem;
+      color: rgb(86, 83, 76);
+      letter-spacing: .0625rem;
+      line-height: 1.714;
+    }
+  }
+
+  .person-block{
+    text-align: center;
+
+    &__position{
+      font-family: Alegreya-Bold, Roboto, Arial, sans-serif;
+      font-size: 1.5rem;
+      color: rgb(86, 83, 76);
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    &__name{
+      text-align: left;
+      border-top: 1px solid rgb(86, 83, 76);
+      border-bottom: 1px solid rgb(86, 83, 76);
+      font-family: Alegreya-Regular, Roboto, Arial, sans-serif;
+      font-size: 1.5rem;
+      color: rgb(86, 83, 76);
+      padding: 15px 30px;
+      display: initial;
+
+    }
+    &_-avatar{
+      float: left;
+    }
+    &__surname{
+      text-align: right;
+      border-top: 1px solid rgb(86, 83, 76);
+      border-bottom: 1px solid rgb(86, 83, 76);
+      font-family: Alegreya-Regular, Roboto, Arial, sans-serif;
+      font-size: 1.5rem;
+      color: rgb(86, 83, 76);
+      padding: 15px 30px;
+      display: initial;
+    }
+
+    &__quote{
+      position: relative;
+
+      .left-quotes{
+        position: absolute;
+        left: 45px;
+      }
+
+      .quote-text{
+        font-size: 1.5rem;
+        font-family: Scriptin, Roboto, Arial, sans-serif;
+        //color: rgb(164, 125, 94);
+        color: #a47d5e;
+        line-height: 1.25;
+        text-align: center;
+        padding: 25px;
+      }
+
+      .right-quotes{
+        position: absolute;
+        right: 45px;
+      }
+    }
+
+  }
+
+  .right-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__taste img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99999999999999;
+    }
+    &__taste p{
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999999999;
+      font-family: Alegreya-Regular, Roboto, Arial, sans-serif;
+      font-size: 30px;
+      color: #c9b176;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .cakes-img{
+      align-content: center;
+      justify-content: center;
+      margin: 10px 0 10px;
+
+      .col-5{
+        padding: 0 10px 0 10px;
+      }
+    }
+  }
+
+}
